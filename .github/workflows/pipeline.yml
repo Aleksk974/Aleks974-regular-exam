@@ -45,8 +45,8 @@ jobs:
       run: npm start &
     - name: Run UI tests
       run: npm run test:ui
-      
-deploy:
+
+  deploy:
     runs-on: ubuntu-latest
     needs: build_ui_test
     steps:
